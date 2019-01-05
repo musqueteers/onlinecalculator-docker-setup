@@ -15,9 +15,14 @@
     ``` bash
     git clone https://github.com/musqueteers/Onlinecalculator
    ```
-5. Change `VUE_APP_BACKEND_ADDR` environment variable inside `docker-compose.yml` to production server's ip address or domain name 
-   ``` yaml
-    VUE_APP_BACKEND_ADDR: "<ip_address/domain">
+5. Change `BASE_URL` environment variable inside `Onlinecalculatorfrontend/config/prod.env.js` to production server's ip address or domain name 
+   ``` javascript
+    'use strict'
+    module.exports = {
+    NODE_ENV: '"production"', 
+    BASE_URL: '"http://<ip_address/domain>:8000/"'
+    }
+
    ```
 6. Build the docker-images
    ``` bash
