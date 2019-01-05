@@ -39,6 +39,6 @@
     docker-compose logs
     ```
 1. Show running docker-compose services (should be inside this repo):
-       ``` bash
+    ``` bash
     docker-compose ps
     ```
