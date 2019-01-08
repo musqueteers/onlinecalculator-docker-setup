@@ -22,13 +22,15 @@
     NODE_ENV: '"production"', 
     BASE_URL: '"http://<ip_address/domain>:8000/"'
     }
-
+6. Add server's domain name or public IP address to `ALLOWED_HOSTS` variable in `Onlinecalculator/onlinecalculator/settings.py`
+   ``` python
+   ALLOWED_HOSTS = ['<ip address or domain name here>']
    ```
-6. Build the docker-images
+7. Build the docker-images
    ``` bash
     docker-compose build
    ```
-## Starting/Stopping the online calculator
+## Starting/Stopping the online calculator (must by inside this repo when executing `docker-compose` commands)
 1. Starting the application
     ``` bash
     docker-compose up &
