@@ -15,6 +15,7 @@
     ``` bash
     git clone https://github.com/musqueteers/Onlinecalculator
    ```
+   #### Optional Steps: The steps here assumes that the master branch of the frontend and backend repositories are stable. If you're testing for development. Go inside each repository and do a `git checkout dev` to switch to the `dev` branch before proceeding to step 5
 5. Change `BASE_URL` environment variable inside `Onlinecalculatorfrontend/config/prod.env.js` to production server's ip address or domain name 
    ``` javascript
     'use strict'
